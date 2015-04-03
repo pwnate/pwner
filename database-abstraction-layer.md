@@ -11,6 +11,10 @@ var db = Database({
 	user: 'root'
 })
 
+db.on('engineer', function (id) {
+	console.log('engineer updated/added')
+})
+
 db.createEngineer({
 	name: 'pwnate'
 })
@@ -44,7 +48,7 @@ var Database = require('pwner-database')
 
 ### `db.createEngineer(opts)`
 
-- Automatic: `engineer_id` (database level) *this isn't implemented yet!*
+- Automatic: `engineer_id` (database level)
 - Required: `name`
 
 --------
@@ -63,3 +67,12 @@ var Database = require('pwner-database')
 
 - Required: `engineer_id`
 - Optional: `name`
+
+### events
+
+- `project` is emitted when a project is added or updated.
+	- `id` is the `project_id`.
+- `contact` is emitted when a contact is added or updated.
+	- `id` is the `contact_id`.
+- `engineer` is emitted when an engineer is added or updated.
+	- `id` is the `engineer_id`.
