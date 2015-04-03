@@ -59,7 +59,7 @@ CREATE TABLE contact (
 );
 
 CREATE TABLE engineer (
-	engineer_id INT UNSIGNED NOT NULL,
+	engineer_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	name VARCHAR(100) NOT NULL,
 	PRIMARY KEY (engineer_id),
 	UNIQUE KEY (name)
