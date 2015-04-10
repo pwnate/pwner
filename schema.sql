@@ -35,10 +35,12 @@ CREATE TABLE project (
 	quote_date DATE,
 	follow_up_date DATE,
 	notes TEXT,
+	version INT UNSIGNED NOT NULL DEFAULT 1,
 	PRIMARY KEY (project_id),
 	INDEX client (contact_id),
 	INDEX engineer (engineer_id),
-	INDEX done_lead (done, active_project_state_id)
+	INDEX done_lead (done, active_project_state_id),
+	INDEX start_date (start_date)
 );
 
 CREATE TABLE contact (
@@ -55,6 +57,7 @@ CREATE TABLE contact (
 	zip_code VARCHAR(20),
 	notes TEXT,
 	preferred_contact_method VARCHAR(100),
+	version INT UNSIGNED NOT NULL DEFAULT 1,
 	PRIMARY KEY(contact_id)
 );
 
