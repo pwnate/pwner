@@ -1,0 +1,33 @@
+{
+  "name": "pwner",
+  "version": "0.0.0",
+  "description": "Custom excel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwnate/pwner.git"
+  },
+  "keywords": [
+    "pwner"
+  ],
+  "author": "pwnate",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/pwnate/pwner/issues"
+  },
+  "homepage": "https://github.com/pwner/pwner",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "camelize": "^1.0.0",
+    "joi": "^6.4.1",
+    "mysql": "^2.6.1",
+    "promise": "^7.0.1",
+    "snakeize": "0.0.1",
+    "sql-concat": "^1.0.0"
+  }
+}
