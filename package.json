@@ -27,7 +27,7 @@
     "joi": "^6.4.1",
     "mysql": "^2.6.1",
     "promise": "^7.0.1",
-    "snakeize": "0.0.1",
+    "snakeize": "^0.1.0",
     "sql-concat": "^1.0.0"
   }
 }
